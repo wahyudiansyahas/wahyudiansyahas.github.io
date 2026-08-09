@@ -93,7 +93,7 @@ const portfolioDocumentDataset = [
   { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
   { title: "Interview Evaluation", category: "recruitment", extension: "pdf", path: "Portofolio/formwawancara.pdf" },
-  { title: "Recruitment Dashboard", category: "recruitment", extension: "xlsx", path: "Portofolio/recruitment.pdf" },
+  { title: "Recruitment Dashboard", category: "recruitment", extension: "xlsx", path: "Portofolio/recruitment.xlsx" },
 
   { title: "PKWT", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
   { title: "SP 1", category: "operations", extension: "pdf", path: "Portofolio/sp.pdf" },
