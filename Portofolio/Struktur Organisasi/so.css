@@ -1,0 +1,608 @@
+/* ============================================================
+   01 DESIGN TOKENS
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    /* Color */
+    --color-canvas: #f8fafc;
+    --color-surface: #ffffff;
+    --color-border: #e2e8f0;
+    --color-border-strong: #cbd5e1;
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #64748b;
+    --color-text-muted: #94a3b8;
+    --color-accent: #0284c7;
+    --color-accent-hover: #0369a1;
+
+    --color-rups: #f97316;
+    --color-rups-fg: #ea580c;
+    --color-rups-bg: #fff7ed;
+
+    --color-commissioner: #2563eb;
+    --color-commissioner-fg: #1d4ed8;
+    --color-commissioner-bg: #eff6ff;
+
+    --color-director-bg: #0f172a;
+    --color-director-fg: #ffffff;
+    --color-director-sub: #94a3b8;
+
+    --color-secretary: #10b981;
+    --color-secretary-fg: #059669;
+    --color-secretary-bg: #f0fdf4;
+
+    --color-committee-fg: #334155;
+    --color-committee-bg: #f8fafc;
+    --color-committee-border: #cbd5e1;
+
+    --color-division-fg: #334155;
+    --color-division-hover: #0284c7;
+    --color-badge-bg: #f1f5f9;
+    --color-badge-fg: #475569;
+
+    --color-status-fg: #065f46;
+    --color-status-bg: #d1fae5;
+    --color-status-border: #a7f3d0;
+
+    /* Connector */
+    --line-thickness: 3px;
+    --line-color: #94a3b8;
+
+    /* Spacing scale */
+    --space-1: 8px;
+    --space-2: 12px;
+    --space-3: 16px;
+    --space-4: 24px;
+    --space-5: 32px;
+    --space-6: 48px;
+    --space-7: 64px;
+    --space-8: 88px;
+
+    /* Radius / Shadow / Transition */
+    --radius-sm: 6px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    --shadow-xs: 0 2px 4px rgb(2 132 199 / 0.15);
+    --shadow-sm: 0 4px 6px -1px rgb(15 23 42 / 0.03), 0 2px 4px -2px rgb(15 23 42 / 0.03);
+    --shadow-md: 0 4px 12px -1px rgb(15 23 42 / 0.03), 0 2px 4px -1px rgb(15 23 42 / 0.02);
+    --shadow-lg: 0 10px 20px -5px rgb(15 23 42 / 0.08);
+
+    --transition-base: 0.2s ease;
+    --easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Typography */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-2xs: clamp(0.6rem, 0.58rem + 0.1vw, 0.65rem);
+    --font-size-xs: clamp(0.68rem, 0.65rem + 0.15vw, 0.75rem);
+    --font-size-sm: clamp(0.78rem, 0.75rem + 0.15vw, 0.85rem);
+    --font-size-title: clamp(1.05rem, 0.95rem + 0.6vw, 1.4rem);
+
+    /* Card geometry — fluid so 100% browser zoom already shows the full
+       chart at a comfortable size instead of requiring the user to zoom
+       the browser out */
+    --card-w: clamp(136px, 10.5vw, 172px);
+    --card-h: clamp(62px, 5vw, 78px);
+    --card-padding: var(--space-2);
+
+    /* Wider tiers so single-line titles never wrap: --card-w-lg for the
+       two top, one-per-row nodes (RUPS, Board of Commissioners); --card-w-md
+       for the three-across executive row and the Secretary branch. Division
+       cards keep the compact --card-w above so the 8-column row still fits
+       the viewport at 100% zoom. */
+    --card-w-lg: clamp(230px, 19vw, 288px);
+    --card-w-md: clamp(176px, 15vw, 216px);
+
+    /* Layout */
+    --content-max-w: 1700px;
+    --content-padding-x: clamp(var(--space-3), 4vw, var(--space-6));
+    --toolbar-h: 60px;
+    --logo-size: 44px;
+
+    /* Shared 3-column template so every level of the executive block —
+       the committee row and the secretary branch below it — line up on
+       exactly the same vertical grid, with zero manual offsets. */
+    --exec-row-template: repeat(3, var(--card-w-md));
+}
+
+/* ============================================================
+   02 RESET
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ============================================================
+   03 BASE
+   ============================================================ */
+html, body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-canvas);
+    color: var(--color-text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================================
+   04 LAYOUT
+   ============================================================ */
+.org-top-bar {
+    width: 100%;
+    min-height: var(--toolbar-h);
+    background: var(--color-surface);
+    padding: var(--space-2) var(--content-padding-x);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    transition: color var(--transition-base);
+}
+
+.btn-back:hover {
+    color: var(--color-accent);
+}
+
+.toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.btn-tool {
+    background: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-2xs);
+    font-weight: 700;
+    color: var(--color-surface);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    box-shadow: var(--shadow-xs);
+    transition: background var(--transition-base), border-color var(--transition-base), transform var(--transition-base);
+}
+
+.btn-tool:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    transform: translateY(-1px);
+}
+
+.view-badge-status {
+    font-size: var(--font-size-2xs);
+    font-weight: 700;
+    color: var(--color-status-fg);
+    background: var(--color-status-bg);
+    border: 1px solid var(--color-status-border);
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-md);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    letter-spacing: 0.3px;
+}
+
+.org-scroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: calc(var(--toolbar-h) + var(--space-2));
+    padding-bottom: var(--space-7);
+}
+
+/* ============================================================
+   05 HEADER
+   ============================================================
+   Layout only: title on the left edge, company brand on the right
+   edge of the same row — matching the reference document's placement.
+   ============================================================ */
+.company-header {
+    width: 100%;
+    max-width: var(--content-max-w);
+    margin: 0 auto var(--space-4) auto;
+    padding: 0 var(--content-padding-x);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.page-title {
+    font-size: var(--font-size-title);
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.company-brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.company-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.company-name {
+    font-size: var(--font-size-title);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+/* ============================================================
+   06 ORGANIZATION TREE
+   ============================================================ */
+.organization-tree-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: var(--content-max-w);
+    margin: 0 auto;
+    padding: 0 var(--content-padding-x);
+    overflow-x: auto;
+}
+
+.org-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.tree-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Level 3 — Audit Committee / President Director / Nomination Committee,
+   three equal-width columns on one shared template. */
+.management-executive-row {
+    display: grid;
+    grid-template-columns: var(--exec-row-template);
+    align-items: start;
+    gap: var(--space-6);
+}
+
+/* Level 3b — Corporate Secretary branches off the backbone to the right,
+   using the SAME column template as the row above, so its trunk lines up
+   exactly under the President Director column with no manual offset. */
+.secretary-branch-row {
+    display: grid;
+    grid-template-columns: var(--exec-row-template);
+    gap: var(--space-6);
+}
+
+.advisory-wing {
+    display: flex;
+    align-items: center;
+    height: var(--card-h);
+    position: relative;
+}
+
+.branch-trunk {
+    grid-column: 2;
+    justify-self: center;
+    width: var(--line-thickness);
+    height: var(--card-h);
+    background-color: var(--line-color);
+}
+
+.secretary-branch-row .advisory-wing {
+    grid-column: 3;
+}
+
+.divisions-grid-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisions-grid-matrix {
+    display: grid;
+    grid-template-columns: repeat(8, var(--card-w));
+    gap: var(--space-4);
+    justify-content: center;
+    position: relative;
+}
+
+.grid-node-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ============================================================
+   07 CONNECTOR SYSTEM
+   ============================================================ */
+.spine-line {
+    width: var(--line-thickness);
+    height: var(--space-6);
+    background-color: var(--line-color);
+    flex-shrink: 0;
+}
+
+.backbone-continuation-line {
+    width: var(--line-thickness);
+    height: var(--space-6);
+    background-color: var(--line-color);
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.division-vertical-line {
+    width: var(--line-thickness);
+    height: var(--space-5);
+    background-color: var(--line-color);
+    flex-shrink: 0;
+}
+
+.advisory-wing::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: var(--space-6);
+    height: var(--line-thickness);
+    background-color: var(--line-color);
+    transform: translateY(-50%);
+}
+
+.left-wing::before {
+    right: calc(-1 * var(--space-6));
+}
+
+.right-wing::before {
+    left: calc(-1 * var(--space-6));
+}
+
+div:has(> .corporate-secretary-wing) .right-wing::before,
+.right-wing:has(+ .corporate-secretary-wing)::before,
+[class*="secretary"] .right-wing::before,
+.right-wing::before {
+    left: -145px !important;
+    width: 150px !important;
+}
+
+.divisions-grid-matrix::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(var(--card-w) / 2);
+    right: calc(var(--card-w) / 2);
+    height: var(--line-thickness);
+    background-color: var(--line-color);
+    z-index: 1;
+}
+
+/* ============================================================
+   08 COMPONENTS
+   ============================================================ */
+.org-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    padding: var(--card-padding);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--card-w);
+    height: var(--card-h);
+    position: relative;
+    z-index: 10;
+    transition: transform var(--transition-base) var(--easing-standard), box-shadow var(--transition-base);
+}
+
+.org-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.org-card h3 {
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    line-height: 1.35;
+}
+
+.org-card p,
+.org-card small {
+    font-size: var(--font-size-2xs);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-1);
+    font-weight: 500;
+}
+
+/* Level 1 & 2 — one card per row, so they can afford to be wide enough
+   for their full English title to stay on a single line. */
+.card-rups,
+.card-commissioner {
+    width: var(--card-w-lg);
+}
+
+.card-rups { border-top: 4px solid var(--color-rups); background: var(--color-rups-bg); }
+.card-rups h3 { color: var(--color-rups-fg); }
+
+.card-commissioner { border-top: 4px solid var(--color-commissioner); background: var(--color-commissioner-bg); }
+.card-commissioner h3 { color: var(--color-commissioner-fg); }
+
+/* Level 3 row + Secretary branch — width matches --exec-row-template
+   above, so the grid column and the card inside it always agree. */
+.card-director,
+.card-committee,
+.card-secretary {
+    width: var(--card-w-md);
+}
+
+.card-director { background: var(--color-director-bg); border-top: 4px solid var(--color-director-bg); }
+.card-director h3 { color: var(--color-director-fg); }
+.card-director small { color: var(--color-director-sub); }
+
+.card-committee { border: 1px solid var(--color-committee-border); background: var(--color-committee-bg); }
+.card-committee h3 { color: var(--color-committee-fg); }
+.lbl-advisory { font-style: italic; }
+
+.card-secretary { border-top: 4px solid var(--color-secretary); background: var(--color-secretary-bg); }
+.card-secretary h3 { color: var(--color-secretary-fg); }
+
+.card-division h3 { color: var(--color-division-fg); font-size: var(--font-size-2xs); font-weight: 600; }
+.card-division:hover { border-color: var(--color-division-hover); }
+
+/* Title and subtitle stay on one line for every card except divisions —
+   their card widths above (--card-w-lg / --card-w-md) are sized to fit
+   the longest string at --font-size-xs / --font-size-2xs with room to
+   spare, so nothing needs to wrap or stagger between cards in a row. */
+.org-card:not(.card-division) h3,
+.org-card:not(.card-division) p,
+.org-card:not(.card-division) small {
+    white-space: nowrap;
+}
+
+.div-badge {
+    font-size: 9px;
+    font-weight: 700;
+    padding: 2px var(--space-1);
+    border-radius: var(--radius-sm);
+    background: var(--color-badge-bg);
+    color: var(--color-badge-fg);
+    border: 1px solid var(--color-border);
+    text-transform: uppercase;
+    margin-bottom: var(--space-1);
+}
+
+/* ============================================================
+   09 UTILITIES
+   ============================================================ */
+.u-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+/* ============================================================
+   10 RESPONSIVE
+   ============================================================ */
+@media screen and (max-width: 767px) {
+    .company-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .management-executive-row,
+    .secretary-branch-row {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: var(--space-3);
+    }
+    .branch-trunk {
+        display: none;
+    }
+    .secretary-branch-row .advisory-wing {
+        grid-column: 1;
+    }
+    .advisory-wing::before {
+        display: none;
+    }
+    .divisions-grid-matrix {
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: var(--space-3);
+    }
+    .divisions-grid-matrix::before {
+        display: none;
+    }
+    .division-vertical-line {
+        height: var(--space-3);
+    }
+}
+
+/* ============================================================
+   08 PRINT STYLES (Mengatur Layout Saat Dicetak)
+   ============================================================ */
+@media print {
+    /* 1. Paksa halaman cetak menjadi mendatar (Landscape) */
+    @page {
+        size: A4 landscape;
+        margin: 10mm;
+    }
+
+    /* 2. Sembunyikan elemen web yang tidak penting di kertas */
+    .org-top-bar, 
+    .btn-back, 
+    .toolbar-actions, 
+    button, 
+    .btn-tool {
+        display: none !important;
+    }
+
+    /* 3. Reset posisi kontainer agar tidak terpotong atau menggulung */
+    body, html {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        min-height: auto !important;
+    }
+
+    .org-scroll-container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        display: block !important;
+    }
+
+    .organization-tree-wrapper {
+        overflow: visible !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .org-tree {
+        transform: scale(0.85); /* <--- Mengecilkan bagan sedikit agar muat dalam 1 lembar */
+        transform-origin: top center;
+    }
+}

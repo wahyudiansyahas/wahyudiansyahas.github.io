@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wahyu. — HR Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+============================================================ -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">Wahyu.</a>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.link/5px7mt" target="_blank" rel="noopener" class="contact-btn">Get In Touch</a>
+    <i class="bx bx-menu menu-icon" id="menuIcon"></i>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section id="home">
+  <div class="home-inner">
+    <div class="home-left">
+      <div class="home-text">
+        <span class="hero-badge"><span class="badge-dot"></span>Open To Work</span>
+        <h1>Hello, I'm <span class="cyan">Wahyudiansyah</span></h1>
+        <h3>Human Resources Staff</h3>
+        <p>Experienced in end-to-end recruitment, employee relations, and HR operations across manufacturing, outsourcing, food and beverage (F&B) industries. Detail-oriented with strong communication, teamwork, and problem-solving skills. Adept at navigating complex workplace dynamics.</p>
+        <div class="hero-buttons">
+          <a href="Folder/New CV.docx" class="btn-primary" download><i class="bx bx-download"></i> Download CV</a>
+          <a href="#about" class="btn-secondary scroll-link">See More <i class="bx bx-chevron-right"></i></a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-icon-wrapper">
+            <i class="bx bx-briefcase-alt-2"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-num cyan">3 Years</span>
+            <span class="stat-desc">Experiences</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper">
+            <i class="bx bx-certification"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-num cyan">BNSP</span>
+            <span class="stat-desc">Valid until 2029</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-wrapper">
+            <i class="bx bx-map"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-num cyan">SUBANG</span>
+            <span class="stat-desc">Open to Relocation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home-right">
+    <img class="hero-image" id="profileImage" src="Galery/profilehome.png" alt="Foto Utama">
+
+    <div class="hero-quote">
+        <p>"Do it, take a changes,<br>wish the summit soon."</p>
+        <p class="hero-quote-author">— ME</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT SECTION
+============================================================ -->
+<section id="about" class="section section-alt">
+  <div class="container">
+    <div class="about-grid">
+
+      <div class="about-photo-card fade-in">
+        <div class="about-photo-frame">
+          <img class="about-photo-img" src="Galery/trams.png" alt="profile photo" />
+        </div>
+      </div>
+
+      <div class="about-content fade-in">
+        <div class="about-summary">
+          <h4 class="summary-label">Summary</h4>
+          <p class="summary-text">
+            Human Resources Staff with experience in recruitment, HR administration, and HR operations.
+            Strong interpersonal skills complemented by analytical thinking, problem-solving abilities,
+            negotiation, adaptability, and attention to detail. Brings a structured and collaborative approach to HR,
+             effectively aligning people with organizational needs.
+          </p>
+        </div>
+
+        <div class="about-tabs" role="tablist">
+          <button class="tab-btn active" data-tab="experience">Experience</button>
+          <button class="tab-btn" data-tab="education">Education</button>
+          <button class="tab-btn" data-tab="organization">Organization</button>
+          <button class="tab-btn" data-tab="training">Training</button>
+          <button class="tab-btn" data-tab="skills">Skills</button>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="tab-content active" id="tab-experience" role="tabpanel">
+          <div class="tab-scroll">
+
+            <!-- ITEM 1 -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Inventory Control &amp; Planning Administrator</h4>
+                  <p class="exp-company">PT. Evanindo Mega Persada</p>
+                  <p class="exp-location"><i class="bx bx-map"></i> Bogor, Indonesia</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">November 2024 – May 2026</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Paklaring/EVMP.pdf" data-title="Paklaring – PT. Evanindo Mega Persada"><i class="bx bx-file-blank"></i> Paklaring</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">HRD</h4>
+                  <p class="exp-company">PT. Ekno Yuag Indonesia</p>
+                  <p class="exp-location"><i class="bx bx-map"></i> Cikarang, Indonesia</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">September 2023 – September 2024</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Paklaring/EKNO.pdf" data-title="Paklaring – PT. Ekno Yuag Indonesia"><i class="bx bx-file-blank"></i> Paklaring</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">HR Operations</h4>
+                  <p class="exp-company">PT. Trans Burger</p>
+                  <p class="exp-location"><i class="bx bx-map"></i> Jakarta, Indonesia</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">December 2022 – June 2023</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Paklaring/Trans.pdf" data-title="Paklaring – PT. Trans Burger"><i class="bx bx-file-blank"></i> Paklaring</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /EXPERIENCE -->
+
+        <!-- EDUCATION -->
+        <div class="tab-content" id="tab-education" role="tabpanel">
+          <div class="tab-scroll">
+
+            <!-- ITEM 1: UNIVERSITAS SUBANG -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Bachelor of Communication</h4>
+                  <p class="edu-major">Faculty of Communication Science</p>
+                  <p class="exp-company">Universitas Subang</p>
+                  <p class="exp-location"><i class="bx bx-award"></i> GPA: 3.34 / 4.00</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">September 2018 – Aug 2022</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Galery/ijazah.png" data-title="Ijazah – Universitas Subang"><i class="bx bx-id-card"></i> Ijazah</a>
+                    <a href="#" class="doc-link" data-modal data-file="Galery/Transkip.jpg" data-title="Transcript – Universitas Subang"><i class="bx bx-file"></i> Transcript</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2: SERTIFIKASI BNSP -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Human Resources Staff</h4>
+                  <p class="exp-company">National Professional Certification Board (BNSP)</p>
+                </div>
+                <div class="exp-right-group">
+                <span class="exp-period">Valid until 2029</span>
+                <div class="item-foot">
+                  <a href="#" class="doc-link" data-modal data-file="Sertifikat/SK.PDF" data-title="SK Kelulusan BNSP — Statement of Passing">
+                    <i class="bx bx-file-blank"></i> Decree
+                  </a>
+                  <a href="#" class="doc-link" data-modal data-file="Galery/BNSP.jpg" data-title="BNSP Competency Certificate">
+                    <i class="bx bx-id-card"></i> Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <!-- /EDUCATION -->
+
+        <!-- ORGANIZATION -->
+        <div class="tab-content" id="tab-organization" role="tabpanel">
+          <div class="tab-scroll">
+
+            <!-- ITEM 1: BEM FIKOM -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <div class="org-title-row">
+                    <h4 class="exp-title">Staff of Public Relations</h4>
+                    <span class="exp-period">July 2019 – July 2020</span>
+                  </div>
+                  <p class="exp-company">BEM FIKOM — Universitas Subang</p>
+                  <div class="org-location-box">
+                    <i class="bx bx-group"></i>
+                    <span class="exp-justified-text">Managed external communications, sponsorships, and served as event Master of Ceremonies (MC).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ITEM 2: LPM UNIVERSITAS SUBANG -->
+            <div class="exp-item">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <div class="org-title-row">
+                    <h4 class="exp-title">Head of Journalism Division</h4>
+                    <span class="exp-period">December 2018 – June 2019</span>
+                  </div>
+                  <p class="exp-company">LPM — Universitas Subang</p>
+                  <div class="org-location-box">
+                    <i class="bx bx-crown"></i>
+                    <span class="exp-justified-text">Led the student press editorial team, authored news articles, and managed digital publishing workflows.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /ORGANIZATION -->
+
+        <!-- TRAINING -->
+        <div class="tab-content" id="tab-training" role="tabpanel">
+          <div class="tab-scroll">
+
+            
+
+            <!-- 2. HRGA STAFF -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Human Resource &amp; General Affair Staff (HRGA)</h4>
+                  <p class="exp-company">PT. MSDM Indonesia Bisa (MSDM.net)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">April 2026</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/MSDM-HRGA.pdf" data-title="HRGA Staff – MSDM.net">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. RECRUITER TRAINING -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Recruiter Training Specialist</h4>
+                  <p class="exp-company">PT. MSDM Indonesia Bisa (MSDM.net)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">September 2025</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/MSDM-REC.pdf" data-title="Recruiter Training – MSDM.net">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. INDUSTRIAL RELATION -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Industrial Relation Training</h4>
+                  <p class="exp-company">PT. MSDM Indonesia Bisa (MSDM.net)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">August 2025</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/MSDM-IR.pdf" data-title="Industrial Relation – MSDM.net">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. PAYROLL -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Payroll Administration Training</h4>
+                  <p class="exp-company">PT. MSDM Indonesia Bisa (MSDM.net)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">July 2025</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/MSDM-PAY.pdf" data-title="Payroll Training – MSDM.net">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 1. TALENTIV ACADEMY -->
+            <div class="tr-item cert-card training-group">
+              <div class="tr-top">
+                <div class="tr-name">Bootcamp Human Resources</div>
+              </div>
+              <div class="tr-meta">
+                <span class="tr-org">Talentiv Academy x Dayamarkara Universitas Indonesia</span>
+              </div>
+              <div class="training-row-container">
+                <div class="training-row">
+                  <div class="tr-row-left">
+                    <div class="tr-row-text"><strong>Talent Acquisition Training</strong></div>
+                  </div>
+                  <span class="tr-date">February 2025</span>
+                </div>
+                <div class="training-row">
+                  <div class="tr-row-left">
+                    <div class="tr-row-text"><strong>Microsoft Excel for HR</strong></div>
+                  </div>
+                  <span class="tr-date">January 2025</span>
+                </div>
+                <div class="training-row">
+                  <div class="tr-row-left">
+                    <div class="tr-row-text"><strong>Human Resource &amp; General Affair (HRGA)</strong></div>
+                  </div>
+                  <span class="tr-date">January 2025</span>
+                </div>
+                <div class="tr-row-sub">
+                  <a href="#" class="cert-link" data-modal data-file="Sertifikat/Project.pptx" data-title="Final Project Presentation – Talentiv">
+                    <i class="bx bx-briefcase"></i> View Project
+                  </a>
+                  <a href="#" class="cert-link" data-modal data-file="Sertifikat/Talentiv.pdf" data-title="All Certificates – Talentiv">
+                    <i class="bx bx-file-blank"></i> Certificate
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 6. SAP -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">SAP Competency Framework</h4>
+                  <p class="exp-company">PT Buana Cipta Chahra (Chahra Event)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">November 2024</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/SAP.pdf" data-title="SAP Competency Framework – Chahra">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. ADVANCED EXCEL -->
+            <div class="tr-item cert-card">
+              <div class="exp-header">
+                <div class="exp-left">
+                  <h4 class="exp-title">Advanced Microsoft Excel for Office Personnel</h4>
+                  <p class="exp-company">LKP Vistama Comtech (Prakerja)</p>
+                </div>
+                <div class="exp-right-group">
+                  <span class="exp-period">June 2024</span>
+                  <div class="item-foot">
+                    <a href="#" class="doc-link" data-modal data-file="Sertifikat/Excel.pdf" data-title="Advanced Microsoft Excel – Vistama">
+                      <i class="bx bx-file-blank"></i> Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /TRAINING -->
+
+        <!-- SKILLS -->
+        <div class="tab-content" id="tab-skills" role="tabpanel">
+          <div class="tab-scroll">
+            <div class="skills-humanist-panel">
+
+              <div class="skill-humanist-group">
+                <h5 class="skill-humanist-label">COMPETENCIES</h5>
+                <div class="skill-humanist-row">
+                  <span class="sk">Job Description</span>
+                  <span class="sk">Sourcing</span>
+                  <span class="sk">CV Screening</span>
+                  <span class="sk">Interviewing</span>
+                  <span class="sk">Onboarding</span>
+                  <span class="sk">Industrial Relations</span>
+                  <span class="sk">Attendance Tracking</span>
+                  <span class="sk">Payroll Administration</span>
+                  <span class="sk">Employee Relations</span>
+                  <span class="sk">BPJS Administration</span>
+                  <span class="sk">Offboarding</span>
+                </div>
+              </div>
+
+              <div class="skill-humanist-group">
+                <h5 class="skill-humanist-label">SOFTWARE & APPLICATIONS</h5>
+                <div class="skill-logo-row">
+                  <!-- Microsoft Office -->
+                  <span class="sk-logo" title="Microsoft Office">
+                    <img src="assets/office.png" alt="Microsoft Office">
+                  </span>
+                  <!-- Microsoft Excel -->
+                  <span class="sk-logo" title="Microsoft Excel">
+                    <img src="assets/excel.png" alt="Microsoft Excel">
+                  </span>
+                  <!-- SAP HRIS -->
+                  <span class="sk-logo" title="SAP">
+                    <img src="assets/sap.png" alt="SAP">
+                  </span>
+                  <!-- Mekari Talenta HRIS -->
+                  <span class="sk-logo" title="Mekari Talenta">
+                    <img src="assets/Mekari.png" alt="Mekari Talenta">
+                  </span>
+                  <!-- BPJS Kesehatan -->
+                  <span class="sk-logo" title="BPJS Kesehatan">
+                    <img src="assets/edabu.png" alt="BPJS Kesehatan">
+                  </span>
+                  <!-- BPJS Ketenagakerjaan -->
+                  <span class="sk-logo" title="BPJS Ketenagakerjaan">
+                    <img src="assets/ssip.png" alt="BPJS Ketenagakerjaan">
+                  </span>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- /SKILLS -->
+
+      </div>
+      <!-- /about-content -->
+
+    </div>
+    <!-- /about-grid -->
+  </div>
+  <!-- /container -->
+</section>
+<!-- /ABOUT SECTION -->
+
+<!-- ============================================================
+     PORTFOLIO SECTION
+============================================================ -->
+<section id="portfolio" class="section">
+  <div class="container">
+    <div class="portfolio-hero">
+      <span class="section-kicker">Resource Center</span>
+      <h2>Work Samples Directory</h2>
+    </div>
+    <div class="drive-container">
+      <aside class="drive-sidebar">
+        <button class="drive-nav-btn active" data-drive-target="all">
+          <i class="bx bx-grid-alt"></i> All Documents
+        </button>
+        <button class="drive-nav-btn" data-drive-target="recruitment">
+          <i class="bx bx-search-alt-2"></i> Recruitment Suite
+        </button>
+        <button class="drive-nav-btn" data-drive-target="operations">
+          <i class="bx bx-folder-open"></i> HR Operations
+        </button>
+        <button class="drive-nav-btn" data-drive-target="payroll">
+          <i class="bx bx-calculator"></i> Payroll &amp; Benefits
+        </button>
+        <button class="drive-nav-btn" data-drive-target="database">
+          <i class="bx bx-data"></i> HR Database
+        </button>
+      </aside>
+      <main class="drive-content">
+        <div class="drive-files-list grid-view" id="driveFilesList">
+          </div>
+      </main>
+    </div>
+  </div>
+</section>
+<!-- /PORTFOLIO SECTION -->
+
+<!-- ============================================================
+     CONTACT SECTION
+============================================================ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+
+    <!-- Heading & Description -->
+    <div class="section-header">
+      <h2>Your HR Partner for Growth</h2>
+      <p>
+        Open to HR General Affairs, HR Operations, and Talent Acquisition opportunities.
+      </p>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+
+        <!-- Contact Information -->
+        <div class="info-card">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <i class="bx bx-envelope"></i>
+            <div>
+              <span>Email</span>
+              <p>wahyudiansyahas@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="bx bxl-whatsapp"></i>
+            <div>
+              <span>WhatsApp</span>
+              <p>+62 812-9491-6066</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <i class="bx bx-map"></i>
+            <div>
+              <span>Address</span>
+              <p>Subang, West Java</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work Preference -->
+        <div class="info-card">
+          <h3>Work Preference</h3>
+          <div class="status-item"><i class="bx bx-buildings"></i><span>On-site</span></div>
+          <div class="status-item"><i class="bx bx-globe"></i><span>Hybrid</span></div>
+          <div class="status-item"><i class="bx bx-laptop"></i><span>Remote</span></div>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <h3 class="form-card-title">Send a Message</h3>
+
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/wahyudiansyahas@gmail.com" method="POST">
+
+          <input type="hidden" name="_next" value="https://formsubmit.co/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="yours@email.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="e.g. Interview Invitation">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Write your message..." required></textarea>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" id="formSubmitBtn" class="form-submit">
+              <i class="bx bx-send"></i> Send Message
+            </button>
+            <span id="formSuccess" class="form-success">Message sent successfully.</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-link">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link">
+          <i class="bx bxl-instagram"></i>
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Wahyudiansyah. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     DOCUMENT VIEWER MODAL
+============================================================ -->
+<div id="docModal" class="doc-modal">
+  <div class="doc-container">
+    <div class="doc-toolbar">
+      <span id="docTitle">Document Preview</span>
+      <div class="doc-actions">
+        <button id="fullscreenBtn" class="doc-btn"><i class="bx bx-fullscreen"></i></button>
+        <button id="closeDocModal" class="doc-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </div>
+    <div class="doc-viewer">
+      <iframe id="docFrame" class="doc-frame"></iframe>
+      <img id="docImage" class="doc-image" style="display:none;" alt="Preview">
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     REFERENCE REQUEST MODAL
+============================================================ -->
+<div class="modal-container" id="refModal">
+  <div class="modal-content-box">
+    <button class="modal-close-btn" id="closeRefModalBtn">&times;</button>
+    <div class="modal-inner">
+      <i class="bx bx-shield-quarter modal-icon"></i>
+      <h4 class="modal-title">Reference Request</h4>
+      <p class="modal-desc">
+        References are available upon request. Please contact me directly via WhatsApp to request supervisor contact details for <span id="modalCompanyName"></span>.
+      </p>
+      <a id="waRefLink" href="" target="_blank" class="doc-link wa-btn">
+        <i class="bx bxl-whatsapp"></i> Request via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
