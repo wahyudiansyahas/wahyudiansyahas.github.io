@@ -88,7 +88,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
    PORTFOLIO — DRIVE FILE FILTER
 ============================================================ */
 const portfolioDocumentDataset = [
-  { title: "Employee Request Form", category: "operations", extension: "pdf", path: "Portofolio/req.pdf" },
+  { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
