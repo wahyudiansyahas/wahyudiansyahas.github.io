@@ -110,7 +110,7 @@ const portfolioDocumentDataset = [
   { title: "BPJS Calculation", category: "payroll", extension: "pdf", path: "Portofolio/bpjs.pdf" },
   { title: "PPH21", category: "payroll", extension: "pdf", path: "Portofolio/pph21.pdf" },
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "Portofolio/ssu.xlsx" },
-  { title: "Payslip", category: "payroll", extension: "pdf", path: "Portofolio/payslip.pdf" },
+  { title: "Payslip", category: "payroll", extension: "pdf", path: "Portofolio/Payslip.pdf" },
 
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "HR Metrics", category: "database", extension: "xlsx", path: "Portofolio/Metric.xlsx" },
