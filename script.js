@@ -115,6 +115,7 @@ const portfolioDocumentDataset = [
 
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "HR Metrics", category: "database", extension: "xlsx", path: "Portofolio/Metric.xlsx" },
+  { title: "Wage Calculation SOP", category: "database", extension: "pdf", path: "Portofolio/soppay.pdf" },
   { title: "Employee Master Database", category: "database", extension: "folder", path: "https://drive.google.com/drive/folders/1SpRUAvVVGg0IPZSGJvfCngt0UpQyeIai?usp=drive_link" },
   
 ];
