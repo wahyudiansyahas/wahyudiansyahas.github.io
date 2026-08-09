@@ -88,16 +88,17 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
    PORTFOLIO — DRIVE FILE FILTER
 ============================================================ */
 const portfolioDocumentDataset = [
+  { title: "Employee Request Form", category: "operations", extension: "pdf", path: "Portofolio/req.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
   { title: "Interview Evaluation", category: "recruitment", extension: "pdf", path: "Portofolio/formwawancara.pdf" },
+  { title: "Recruitment Dashboard", category: "recruitment", extension: "xlsx", path: "Portofolio/recruitment.pdf" },
 
   { title: "PKWT", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
   { title: "SP 1", category: "operations", extension: "pdf", path: "Portofolio/sp.pdf" },
   { title: "Leave Request Form", category: "operations", extension: "pdf", path: "Portofolio/cuti.pdf" },
   { title: "Exit Interview Form", category: "operations", extension: "pdf", path: "Portofolio/exit.pdf" },
-  { title: "Employee Request Form", category: "operations", extension: "pdf", path: "Portofolio/req.pdf" },
   { title: "Contract Renewal Evaluation Form", category: "operations", extension: "pdf", path: "Portofolio/evaluasikontrak.pdf" },
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },
