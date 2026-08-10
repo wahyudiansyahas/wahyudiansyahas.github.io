@@ -472,7 +472,7 @@ section[id] { scroll-margin-top: var(--nav-h); }
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: right 70%;
+  object-position: right 25%;
   position: relative;
   z-index: 2;
 }
@@ -510,7 +510,7 @@ section[id] { scroll-margin-top: var(--nav-h); }
 .hero-quote {
   position: absolute;
   top: 90px;    
-  right: -160px; 
+  right: -180px; 
   width: 330px;
   max-width: 80%;
   z-index: 3;
