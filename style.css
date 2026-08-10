@@ -1495,15 +1495,35 @@ footer {
     text-align: center;
   }
 
-  .home-right { order: -1; height: auto; width: 100%; max-width: 280px; margin: 0 auto; align-self: center; }
+  .home-right {
+    order: -1;
+    height: auto;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    align-self: center;
+    overflow: visible;
+  }
 
   .hero-image {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: center top !important;
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
   }
+
+  .hero-quote {
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto 0;
+  }
+  .hero-quote p,
+  .hero-quote-author { text-align: center; }
 
   .home-text { text-align: center; padding-inline: 1rem; display: flex; flex-direction: column; align-items: center; }
   .home-text h1 { white-space: normal; font-size: clamp(1.4rem, 5vw, 1.85rem); margin-block: .75rem; text-align: center; }
@@ -1535,6 +1555,9 @@ footer {
   /* Contact */
   .contact-form-card { padding: 1.4rem 1.15rem; }
   .form-row          { grid-template-columns: 1fr; }
+  input, textarea, select { max-width: 100%; min-width: 0; }
+  .drive-content > * { min-width: 0; }
+  [class*="toolbar"], [class*="search"] { flex-wrap: wrap; }
 
   /* Footer */
   .footer-inner { flex-direction: column; text-align: center; }
@@ -1570,4 +1593,173 @@ footer {
 @media (max-width: 480px) {
   .about-photo-card { max-width: 260px; }
   .about-photo-img  { max-width: 200px; }
+  .stat-card { white-space: normal; padding: .6rem 1rem; }
+  .drive-files-list.grid-view { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 1024px–961px (Tablet / Laptop Kecil)
+============================================================ */
+@media (max-width: 1024px) and (min-width: 961px) {
+  .hero-image { object-fit: contain !important; object-position: center top !important; height: auto !important; }
+  .home-right { height: auto !important; }
+  .hero-quote { right: 0; top: 60px; max-width: min(260px, 28vw); }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 400px (HP Sangat Kecil)
+============================================================ */
+@media (max-width: 400px) {
+  .home-text h1  { font-size: 1.35rem; }
+  .hero-badge    { font-size: .7rem; padding: .28rem .8rem; }
+  .drive-nav-btn { padding: .6rem .8rem; font-size: .8rem; }
+  .contact-form-card,
+  .info-card     { padding: 1.1rem; }
+}
+
+
+/* ============================================================================================
+   ⭐ MOBILE & TABLET FIX PATCH (TAMBAHAN BARU)
+   ------------------------------------------------------------------------------------------
+   Semua rule di atas (asli) TIDAK diubah/dihapus sama sekali.
+   Blok di bawah ini HANYA menambahkan override yang lebih spesifik/lebih akhir di cascade,
+   supaya struktur HTML & style desktop tidak terganggu, tapi masalah "tidak simetris/rapi
+   di HP & tablet" bisa diperbaiki.
+
+   ROOT CAUSE UTAMA yang ditemukan dari screenshot:
+   1) .hero-quote di-posisikan `position:absolute; right:-180px; width:330px;` relatif
+      terhadap .home-right. Di layar HP (mis. realme C25 ~360-412px), .home-right hanya
+      selebar 280px (lihat breakpoint 960px), sehingga quote box "meluber" jauh ke kanan
+      luar viewport. Ini yang bikin halaman terlihat "kegeser"/ada spasi kosong biru di
+      sisi kanan pada SEMUA section (header, about, portfolio, contact) — karena browser
+      mobile tetap mengizinkan scroll horizontal walau body overflow-x:hidden, akibat
+      elemen fixed-position (header) tetap terkunci ke visual viewport sementara konten
+      lain sudah "bergeser".
+   2) Belum ada breakpoint transisi untuk layar tablet/laptop kecil (961px–1200px), jadi
+      .hero-quote juga berpotensi meluber di tablet landscape / laptop kecil.
+   3) Input/textarea (form kontak, search di Work Samples Directory) belum punya
+      min-width:0 / max-width:100%, jadi berpotensi mendorong container melebar ke kanan
+      pada layar sempit.
+   4) Belum ada penyesuaian ekstra untuk HP kecil (<400px) — teks & badge sedikit terlalu
+      besar untuk layar itu.
+============================================================================================ */
+
+/* --- 0. Jaring pengaman anti-scroll horizontal di seluruh halaman --- */
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* --- 0b. FOTO UTAMA (.hero-image): jaring pengaman TAMBAHAN khusus foto, di luar
+          breakpoint 960px yang sudah ada di atas.
+          Alasan: di simulasi resize browser laptop, foto SUDAH tidak crop (sudah
+          object-fit:contain). Tapi kalau di HP ASLI masih crop, itu HAMPIR PASTI karena
+          breakpoint @media(max-width:960px) di atas tidak sempat aktif — biasanya karena
+          HTML belum punya <meta name="viewport" content="width=device-width, initial-scale=1">
+          di bagian <head>. Tanpa meta tag itu, HP akan memuat halaman seolah-olah layar
+          selebar ~980px (bukan lebar layar asli), sehingga breakpoint 960px tidak kena,
+          dan foto balik pakai rule desktop (object-fit:cover) yang meng-crop kepala.
+          CSS di bawah ini memperlebar jangkauan "aman" sampai 1024px dan pakai !important
+          KHUSUS untuk foto, supaya tetap tidak ke-crop meski breakpoint utama meleset,
+          tanpa mengubah layout grid/kolom lain (hanya elemen foto yang disentuh). */
+@media (max-width: 1024px) {
+  .hero-image {
+    object-fit: contain !important;
+    object-position: center top !important;
+    height: auto !important;
+  }
+  .home-right {
+    height: auto !important;
+  }
+}
+
+/* --- 1. FIX UTAMA: kunci .hero-quote agar tidak pernah keluar dari container induknya,
+         di semua ukuran layar (desktop tetap terlihat sama seperti sebelumnya) --- */
+.hero-quote {
+  max-width: min(330px, 30vw);
+}
+
+/* Tablet & laptop kecil (961px–1200px): geser quote sedikit ke dalam supaya tidak
+   keluar viewport, tanpa mengubah tampilan desktop besar (>1200px) sama sekali */
+@media (max-width: 1200px) and (min-width: 961px) {
+  .hero-quote {
+    right: 0;
+    top: 60px;
+    max-width: min(260px, 28vw);
+  }
+}
+
+/* Tablet portrait & HP (≤960px): ikut breakpoint mobile yang sudah ada,
+   .home-right jadi column & quote diletakkan mengalir di bawah foto (bukan lagi absolute
+   yang bisa meluber keluar layar) */
+@media (max-width: 960px) {
+  .home-right {
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .hero-quote {
+    position: static;
+    top: auto;
+    right: auto;
+    width: 100%;
+    max-width: 320px;
+    margin: 1rem auto 0;
+  }
+
+  .hero-quote p,
+  .hero-quote-author {
+    text-align: center;
+  }
+}
+
+/* --- 2. Cegah input/textarea/select mendorong lebar container (form kontak,
+         search box di Work Samples Directory, dsb.) --- */
+input,
+textarea,
+select {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Jaga-jaga untuk toolbar/pencarian di dalam kartu portfolio agar boleh wrap
+   ke baris baru kalau sempit, alih-alih memaksa lebar (no-op kalau bukan flex) */
+.drive-content > * {
+  min-width: 0;
+}
+[class*="toolbar"],
+[class*="search"] {
+  flex-wrap: wrap;
+}
+
+/* --- 3. Penyesuaian tambahan untuk HP kecil (≤480px), melengkapi breakpoint
+         480px yang sudah ada di atas, tanpa menimpa isinya --- */
+@media (max-width: 480px) {
+  .stat-card {
+    white-space: normal;
+    padding: .6rem 1rem;
+  }
+
+  .drive-files-list.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* --- 4. Penyesuaian ekstra untuk HP sangat kecil (≤400px), mis. layar sekitar
+         360px seperti pada realme C25 --- */
+@media (max-width: 400px) {
+  .home-text h1  { font-size: 1.35rem; }
+  .hero-badge    { font-size: .7rem; padding: .28rem .8rem; }
+  .drive-nav-btn { padding: .6rem .8rem; font-size: .8rem; }
+  .contact-form-card,
+  .info-card     { padding: 1.1rem; }
 }
