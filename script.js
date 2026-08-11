@@ -102,6 +102,7 @@ const portfolioDocumentDataset = [
   { title: "Contract Renewal Evaluation Form", category: "operations", extension: "pdf", path: "Portofolio/evaluasikontrak.pdf" },
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },
+  { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pdf", path: "Portofolio/wlkp.pdf" },
 
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "Portofolio/Payroll.xlsx" },
