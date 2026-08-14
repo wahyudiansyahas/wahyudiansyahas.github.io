@@ -91,7 +91,7 @@ const portfolioDocumentDataset = [
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
   { title: "Job Posting", category: "recruitment", extension: "png", path: "Portofolio/zoho.png" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
-  { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png" },
+  { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png", "Portofolio/zoho.png" },
   { title: "Candidate Application Form", category: "recruitment", extension: "link", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
   { title: "Applicant Tracking System", category: "recruitment", extension: "link", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
