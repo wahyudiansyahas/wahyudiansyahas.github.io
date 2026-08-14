@@ -89,7 +89,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 ============================================================ */
 const portfolioDocumentDataset = [
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
-  { title: "Man Power Planning", category: "recruitment", extension: "xlsx", path: "Portofolio/mpp.xlsx" },
+  { title: "Job Posting", category: "recruitment", extension: "png", path: "Portofolio/zoho.png" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "png", path: "Portofolio/jobvacancy.png" },
   { title: "Candidate Application Form", category: "recruitment", extension: "link", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
