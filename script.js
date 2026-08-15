@@ -89,13 +89,12 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 ============================================================ */
 const portfolioDocumentDataset = [
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
-  { title: "Job Posting", category: "recruitment", extension: "png", path: "Portofolio/zoho.png" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobpost.pdf" },
   { title: "Candidate Application Form", category: "recruitment", extension: "link", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
-  { title: "Applicant Tracking System", category: "recruitment", extension: "link", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
+  { title: "Behavioral Event Interview", category: "recruitment", extension: "png", path: "Portofolio/bei.png" },
+  { title: "Recruitment Tracking System", category: "recruitment", extension: "link", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
-  { title: "Interview Evaluation", category: "recruitment", extension: "pdf", path: "Portofolio/formwawancara.pdf" },
 
   { title: "PKWT", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
   { title: "SP 1", category: "operations", extension: "pdf", path: "Portofolio/sp.pdf" },
