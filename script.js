@@ -92,7 +92,7 @@ const portfolioDocumentDataset = [
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobpost.pdf" },
   { title: "Candidate Application Form", category: "recruitment", extension: "link", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
-  { title: "Behavioral Event Interview", category: "recruitment", extension: "png", path: "Portofolio/bei.png" },
+  { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
   { title: "Recruitment Tracking System", category: "recruitment", extension: "link", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
 
