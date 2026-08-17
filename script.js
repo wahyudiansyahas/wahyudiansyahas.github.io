@@ -107,9 +107,7 @@ const portfolioDocumentDataset = [
 
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "Portofolio/Payroll.xlsx" },
-  { title: "Attendance", category: "payroll", extension: "pdf", path: "Portofolio/absen.pdf" },
-  { title: "Overtime Request Form", category: "payroll", extension: "pdf", path: "Portofolio/spkl.pdf" },
-  { title: "Overtime", category: "payroll", extension: "pdf", path: "Portofolio/lembur.pdf" },
+  { title: "Salary Structure", category: "payroll", extension: "pdf", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "BPJS Calculation", category: "payroll", extension: "pdf", path: "Portofolio/bpjs.pdf" },
   { title: "PPH21", category: "payroll", extension: "pdf", path: "Portofolio/pph21.pdf" },
   { title: "Job Evaluation", category: "payroll", extension: "docx", path: "Portofolio/bobot.docx" },
