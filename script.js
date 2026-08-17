@@ -112,7 +112,7 @@ const portfolioDocumentDataset = [
   { title: "Overtime", category: "payroll", extension: "pdf", path: "Portofolio/lembur.pdf" },
   { title: "BPJS Calculation", category: "payroll", extension: "pdf", path: "Portofolio/bpjs.pdf" },
   { title: "PPH21", category: "payroll", extension: "pdf", path: "Portofolio/pph21.pdf" },
-  { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "Portofolio/ssu.xlsx" },
+  { title: "Job Evaluation", category: "payroll", extension: "docx", path: "Portofolio/bobot.docx" },
   { title: "Payslip", category: "payroll", extension: "pdf", path: "Portofolio/Payslip.pdf" },
 
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
