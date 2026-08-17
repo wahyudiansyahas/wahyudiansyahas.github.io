@@ -91,9 +91,9 @@ const portfolioDocumentDataset = [
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobpost.pdf" },
-  { title: "Candidate Application Form", category: "recruitment", extension: "link", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
+  { title: "Candidate Application Form", category: "recruitment", extension: "google-forms", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
   { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
-  { title: "Recruitment Tracking System", category: "recruitment", extension: "link", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
+  { title: "Recruitment Tracking System", category: "recruitment", extension: "google-sheets", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
 
   { title: "PKWT", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
@@ -107,7 +107,7 @@ const portfolioDocumentDataset = [
 
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "Portofolio/Payroll.xlsx" },
-  { title: "Salary Structure", category: "payroll", extension: "pdf", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
+  { title: "Salary Structure", category: "payroll", extension: "google-sheets", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "BPJS Calculation", category: "payroll", extension: "pdf", path: "Portofolio/bpjs.pdf" },
   { title: "PPH21", category: "payroll", extension: "pdf", path: "Portofolio/pph21.pdf" },
   { title: "Job Evaluation", category: "payroll", extension: "docx", path: "Portofolio/bobot.docx" },
