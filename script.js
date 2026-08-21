@@ -88,12 +88,12 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
    PORTFOLIO — DRIVE FILE FILTER
 ============================================================ */
 const portfolioDocumentDataset = [
-  { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/req.pdf" },
-  { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/jd.pdf" },
+  { title: "Recruitment Tracking System", category: "recruitment", extension: "gsheets", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
+  { title: "Candidate Application Form", category: "recruitment", extension: "gform", path: "https://docs.google.com/forms/d/e/1FAIpQLSeAoVUImuWZPE-RLrhpHamEU1HAC3-r7OfxmpvBuqzz6510eA/viewform" },
+  { title: "Employee Request Form", category: "recruitment", extension: "docx", path: "Portofolio/Form-Permintaan-Karyawan.docx" },
+  { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/Uraian Jabatan.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobpost.pdf" },
-  { title: "Candidate Application Form", category: "recruitment", extension: "google-forms", path: "https://forms.gle/nZTjRu7ir1Rf5MDd8" },
-  { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
-  { title: "Recruitment Tracking System", category: "recruitment", extension: "google-sheets", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
+  { title: "Behavioral Event Interview", category: "recruitment", extension: "docx", path: "Portofolio/bei.docx" },
   { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/ol.pdf" },
 
   { title: "PKWT", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
