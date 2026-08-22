@@ -170,7 +170,7 @@ const portfolioDocumentDataset = [
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "Job Evaluation", category: "payroll", extension: "docx", path: "https://docs.google.com/document/d/1MnuqyR1bJ9YblIbBNIsT5FmCsnSenKVO/edit?usp=drive_link&ouid=100218828934819314835&rtpof=true&sd=true" },
 
-  { title: "Employee Management", category: "database", extension: "google-spreadsheet", path: "https://docs.google.com/spreadsheets/d/11GKHjfkVMH-HL7wDXVQg54Ql2it7JDVGcCS4z-BVFm0/edit?usp=sharing" },
+  { title: "Employee Management", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/11GKHjfkVMH-HL7wDXVQg54Ql2it7JDVGcCS4z-BVFm0/edit?usp=sharing" },
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "Employee Master Database", category: "database", extension: "folder", path: "https://drive.google.com/drive/folders/1SpRUAvVVGg0IPZSGJvfCngt0UpQyeIai?usp=drive_link" }
 
