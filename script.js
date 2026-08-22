@@ -156,14 +156,15 @@ const portfolioDocumentDataset = [
   { title: "Recruitment Tracking System", category: "recruitment", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
   { title: "Candidate Application Form", category: "recruitment", extension: "google-form", path: "https://forms.gle/ea964dRMdwcDU7VL7" },
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/FormPermintaanKaryawan.pdf" },
+  { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/UraianJabatan.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "jpg", path: "Portofolio/jobvacancy.png" },
   { title: "Behavioral Event Interview", category: "recruitment", extension: "docx", path: "Portofolio/bei.pdf" },
    
 
   { title: "Automated Attendance Tracker", category: "operations", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
-  { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pdf", path: "Portofolio/wlkp.pdf" },
-  { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
-  { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
+  { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pptx", path: "Portofolio/wlkp.pdf" },
+  { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pptx", path: "Portofolio/adminjkn.pdf" },
+  { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pptx", path: "Portofolio/adminjamsos.pdf" },  
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "Portofolio/Payroll.xlsx" },
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
