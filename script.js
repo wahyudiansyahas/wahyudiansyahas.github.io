@@ -170,7 +170,7 @@ const portfolioDocumentDataset = [
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1eA9e6Y3ib4iLQS7VEu7QNgnWrJm4ITLEXXNh4zUXnEk/edit?usp=sharing" },
-  { title: "Automated Payroll & PPh 21 Tax True-Up System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1BOrMimiLWY-EVUUnnKBh8eiNB0ARqtHihsgDP2a69Ho/edit?usp=sharing" },
+  { title: "PPh 21 Tax True-Up System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1BOrMimiLWY-EVUUnnKBh8eiNB0ARqtHihsgDP2a69Ho/edit?usp=sharing" },
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
