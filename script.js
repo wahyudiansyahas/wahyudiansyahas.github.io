@@ -162,6 +162,7 @@ const portfolioDocumentDataset = [
    
 
   { title: "Automated Attendance Tracker", category: "operations", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
+  { title: "Fixed-Term Employment Agreement", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
   { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pdf", path: "Portofolio/wlkp.pdf" },
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
