@@ -172,6 +172,8 @@ const portfolioDocumentDataset = [
 
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1eA9e6Y3ib4iLQS7VEu7QNgnWrJm4ITLEXXNh4zUXnEk/edit?usp=sharing" },
   { title: "PPh 21 Tax True-Up System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1BOrMimiLWY-EVUUnnKBh8eiNB0ARqtHihsgDP2a69Ho/edit?usp=sharing" },
+  { title: "BPJS Calculation", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1a7AVNmde1HRu8W85x_CwHr_HE0lm0JrLMkDVvMZ8t4Y/edit?usp=sharing" },
+  { title: "Overtime Calculation", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1sKX1ZNtJqwfrOjNXht42i161c0uleAPuP5xRb6zfDm4/edit?usp=sharing" },
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
