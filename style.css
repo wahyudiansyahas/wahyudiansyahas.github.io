@@ -719,7 +719,7 @@ section[id] { scroll-margin-top: var(--nav-h); }
 .skills-humanist-panel { display: flex; flex-direction: column; gap: 1.25rem; width: 100%; padding-bottom: 1.5rem; }
 .skill-humanist-group  { width: 100%; display: block; }
 
-.skill-humanist-label {
+.skill-humanist-label { 
   font-size: .74rem;
   font-weight: 700;
   color: var(--cyan);
@@ -729,7 +729,6 @@ section[id] { scroll-margin-top: var(--nav-h); }
   letter-spacing: .06em;
 }
 
-/* Row untuk teks capsule (Tetap Wrap agar rapi saat menyamping) */
 .skill-humanist-row { 
   display: flex; 
   flex-wrap: wrap; 
@@ -752,7 +751,9 @@ section[id] { scroll-margin-top: var(--nav-h); }
   transform: translateY(-1px);
 }
 
-/* MODIFIKASI UI/UX: Row khusus logo agar rata kiri-kanan pas layout dan TIDAK TURUN */
+/* ============================================================
+   SKILL LOGO ROW
+============================================================ */
 .skill-logo-row {
   display: flex;
   flex-wrap: wrap;
@@ -776,9 +777,8 @@ section[id] { scroll-margin-top: var(--nav-h); }
   transition: all 0.25s ease-in-out;
 }
 
-/* Dimensi default logo standar */
 .skill-logo-row .sk-logo img {
-  height: 32px; /* [DIPERBAIKI: Menaikkan tinggi dasar agar teks BPJS tetap terbaca dengan jelas] */
+  height: 32px;
   width: auto !important;
   max-width: 130px !important;
   object-fit: contain !important;
@@ -787,22 +787,30 @@ section[id] { scroll-margin-top: var(--nav-h); }
   transition: transform 0.25s ease-in-out;
 }
 
-/* MODIFIKASI UI/UX: Dongkrak ukuran khusus logo yang punya white space bawaan agar terlihat sama solid */
 .skill-logo-row .sk-logo[title*="Office"] img,
 .skill-logo-row .sk-logo[title*="Excel"] img {
-  height: 48px !important; /* [DIPERBAIKI: Menaikkan ukuran Office & Excel ke 48px agar tidak terlalu kecil] */
+  height: 48px !important;
+}
+
+.skill-logo-row .sk-logo[title*="Workspace"] img,
+.skill-logo-row .sk-logo[title*="Sheets"] img {
+  height: 80px !important; 
 }
 
 .skill-logo-row .sk-logo[title*="SAP"] img,
 .skill-logo-row .sk-logo[title*="talenta"] img,
 .skill-logo-row .sk-logo[title*="Talenta"] img {
-  height: 24px !important; /* [DIPERBAIKI: Menurunkan ukuran SAP & Mekari ke 24px agar tidak terlalu dominan] */
+  height: 24px !important;
+}
+
+.skill-logo-row .sk-logo[title*="Tracking"] img,
+.skill-logo-row .sk-logo[title*="Zoho"] img {
+  height: 32px !important;
 }
 
 .skill-logo-row .sk-logo:hover img {
   transform: scale(1.04);
 }
-
 
 /* ============================================================
    TRAINING & CERTIFICATION
