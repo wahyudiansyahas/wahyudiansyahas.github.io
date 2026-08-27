@@ -157,7 +157,7 @@ const portfolioDocumentDataset = [
   { title: "Candidate Application Form", category: "recruitment", extension: "google-form", path: "https://forms.gle/ea964dRMdwcDU7VL7" },
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/FormPermintaanKaryawan.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/UraianJabatan.pdf" },
-  { title: "Job Vacancy", category: "recruitment", extension: "jpg", path: "Portofolio/jobvacancy.png" },
+  { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobvacancy.pdf" },
   { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
    
 
