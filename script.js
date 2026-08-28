@@ -159,6 +159,7 @@ const portfolioDocumentDataset = [
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/UraianJabatan.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobvacancy.pdf" },
   { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
+  { title: "Offering Letter", category: "recruitment", extension: "pdf", path: "Portofolio/Offering_Letter.pdf" },
    
 
   { title: "Automated Attendance Tracker", category: "operations", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
