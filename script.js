@@ -167,6 +167,7 @@ const portfolioDocumentDataset = [
   { title: "Overtime Authorization Form", category: "operations", extension: "pdf", path: "Portofolio/formSPKL.pdf" },
   { title: "SP 1 (First Warning Letter)", category: "operations", extension: "pdf", path: "Portofolio/suratperingatan.pdf" },
   { title: "Employee Experience & Exit Feedback", category: "operations", extension: "google-form", path: "https://forms.gle/ZXMyyeAdGA7ipF8B6" },
+   { title: "Contract Renewal Assessment", category: "operations", extension: "pdf", path: "Portofolio/FormEvaluasi.pdf" },
   { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pdf", path: "Portofolio/wlkp.pdf" },
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
