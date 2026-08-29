@@ -161,8 +161,7 @@ const portfolioDocumentDataset = [
   { title: "Behavioral Event Interview", category: "recruitment", extension: "pdf", path: "Portofolio/bei.pdf" },
   { title: "Offering Letter", category: "recruitment", extension: "png", path: "Portofolio/OfferingLetter.png" },
    
-
-  { title: "Automated Attendance Tracker", category: "operations", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
+  
   { title: "Fixed-Term Employment Agreement", category: "operations", extension: "pdf", path: "Portofolio/pkwt.pdf" },
   { title: "Overtime Authorization Form", category: "operations", extension: "pdf", path: "Portofolio/formSPKL.pdf" },
   { title: "SP 1 (First Warning Letter)", category: "operations", extension: "pdf", path: "Portofolio/suratperingatan.pdf" },
@@ -172,6 +171,7 @@ const portfolioDocumentDataset = [
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
 
+  { title: "Automated Attendance Tracker", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1eA9e6Y3ib4iLQS7VEu7QNgnWrJm4ITLEXXNh4zUXnEk/edit?usp=sharing" },
   { title: "PPh 21 Tax True-Up System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1BOrMimiLWY-EVUUnnKBh8eiNB0ARqtHihsgDP2a69Ho/edit?usp=sharing" },
   { title: "BPJS Calculation", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1a7AVNmde1HRu8W85x_CwHr_HE0lm0JrLMkDVvMZ8t4Y/edit?usp=sharing" },
