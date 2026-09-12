@@ -154,7 +154,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 const portfolioDocumentDataset = [
 
   { title: "Recruitment Tracking System", category: "recruitment", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1FaAaGI98UCbKDov7pCWAmc-ivpDoKfSeLNbyHIqLrl0/edit?usp=sharing" },
-  { title: "TalentPool", category: "recruitment", extension: "google-form", path: "https://forms.gle/cEUkMnD9xBo1bAiG9" },
+  { title: "Candidate Application Form", category: "recruitment", extension: "google-form", path: "https://forms.gle/cEUkMnD9xBo1bAiG9" },
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/FormPermintaanKaryawan.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/UraianJabatan.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobvacancy.pdf" },
