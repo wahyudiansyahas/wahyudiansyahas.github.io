@@ -154,7 +154,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 const portfolioDocumentDataset = [
 
   { title: "Recruitment Tracking System", category: "recruitment", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1pJHEUsY4TNeTuy2EE7zPm76S6xwgcCGOqc-4tW9BapI/edit?usp=sharing" },
-  { title: "Candidate Application Form", category: "recruitment", extension: "google-form", path: "https://forms.gle/ofuitFVdcGBZLxYt7" },
+  { title: "Candidate Application Form", category: "recruitment", extension: "google-form", path: "https://forms.gle/W7xFPyjaWDMfScf37" },
+  { title: "Form Assesment", category: "recruitment", extension: "google-form", path: "https://forms.gle/4A2gu2wb6zQe42BH7" }, 
   { title: "Employee Request Form", category: "recruitment", extension: "pdf", path: "Portofolio/Manpower.pdf" },
   { title: "Job Description", category: "recruitment", extension: "pdf", path: "Portofolio/UraianJabatan.pdf" },
   { title: "Job Vacancy", category: "recruitment", extension: "pdf", path: "Portofolio/jobvacancy.pdf" },
@@ -166,7 +167,6 @@ const portfolioDocumentDataset = [
   { title: "Letter Of Extension", category: "operations", extension: "docx", path: "https://docs.google.com/document/d/1fWuFlERtHT9otTsr_WMMpLj15chTqAqw/edit" },
   { title: "Overtime Authorization Form", category: "operations", extension: "docx", path: "https://docs.google.com/document/d/1dNwa7WM620LeYoQSdH0KYCb35ogvMcVW/edit" },
   { title: "SP 1 (First Warning Letter)", category: "operations", extension: "docx", path: "https://docs.google.com/document/d/1Rz5qedJX5Ywd7sVEiVhbHjb_PytFAO2e/edit" },
-  { title: "Employee Experience & Exit Feedback", category: "operations", extension: "google-form", path: "https://forms.gle/ZXMyyeAdGA7ipF8B6" },
   { title: "Contract Renewal Assessment", category: "operations", extension: "pdf", path: "Portofolio/evaluasikontrak.pdf" },
   { title: "Wajib Lapor Ketenagakerjaan (WLKP) Administration", category: "operations", extension: "pdf", path: "Portofolio/wlkp.pdf" },
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
@@ -181,6 +181,9 @@ const portfolioDocumentDataset = [
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
   { title: "HR Master Data Hub.", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1Jq-3QncdJHQRHzO-7SQs5wO7xLZjGXGGrYHOzDNgp8o/edit?usp=sharing" },
+  { title: "Form New Emlpoyee", category: "operations", extension: "google-form", path: "https://forms.gle/fZDM8AGXzW7YCxL39" },
+  { title: "Form Update Data Emlpoyee", category: "operations", extension: "google-form", path: "https://forms.gle/NUuGuiXrfcvuQG867" },
+  { title: "Employee Experience & Exit Feedback", category: "operations", extension: "google-form", path: "https://forms.gle/ZXMyyeAdGA7ipF8B6" }, 
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "Employee Master Database", category: "database", extension: "folder", path: "https://drive.google.com/drive/folders/1SpRUAvVVGg0IPZSGJvfCngt0UpQyeIai?usp=drive_link" }
 
