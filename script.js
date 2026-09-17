@@ -181,9 +181,9 @@ const portfolioDocumentDataset = [
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
   { title: "HR Master Data Hub.", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1Jq-3QncdJHQRHzO-7SQs5wO7xLZjGXGGrYHOzDNgp8o/edit?usp=sharing" },
-  { title: "Form New Emlpoyee", category: "operations", extension: "google-form", path: "https://forms.gle/fZDM8AGXzW7YCxL39" },
-  { title: "Form Update Data Emlpoyee", category: "operations", extension: "google-form", path: "https://forms.gle/NUuGuiXrfcvuQG867" },
-  { title: "Employee Experience & Exit Feedback", category: "operations", extension: "google-form", path: "https://forms.gle/ZXMyyeAdGA7ipF8B6" }, 
+  { title: "Form New Emlpoyee", category: "database", extension: "google-form", path: "https://forms.gle/fZDM8AGXzW7YCxL39" },
+  { title: "Form Update Data Emlpoyee", category: "database", extension: "google-form", path: "https://forms.gle/NUuGuiXrfcvuQG867" },
+  { title: "Employee Experience & Exit Feedback", category: "database", extension: "google-form", path: "https://forms.gle/ZXMyyeAdGA7ipF8B6" }, 
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "Employee Master Database", category: "database", extension: "folder", path: "https://drive.google.com/drive/folders/1SpRUAvVVGg0IPZSGJvfCngt0UpQyeIai?usp=drive_link" }
 
