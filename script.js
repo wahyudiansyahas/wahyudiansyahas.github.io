@@ -179,7 +179,7 @@ const portfolioDocumentDataset = [
   { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
-  { title: "Employee Management", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/11GKHjfkVMH-HL7wDXVQg54Ql2it7JDVGcCS4z-BVFm0/edit?usp=sharing" },
+  { title: "HR Master Data Hub.", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1Jq-3QncdJHQRHzO-7SQs5wO7xLZjGXGGrYHOzDNgp8o/edit?usp=sharing" },
   { title: "Organization Structure", category: "database", extension: "html", path: "Portofolio/Struktur Organisasi/so.html" },
   { title: "Employee Master Database", category: "database", extension: "folder", path: "https://drive.google.com/drive/folders/1SpRUAvVVGg0IPZSGJvfCngt0UpQyeIai?usp=drive_link" }
 
