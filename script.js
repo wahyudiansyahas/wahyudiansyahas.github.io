@@ -172,12 +172,12 @@ const portfolioDocumentDataset = [
   { title: "BPJS Kesehatan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjkn.pdf" },
   { title: "BPJS Ketenagakerjaaan Administrator", category: "operations", extension: "pdf", path: "Portofolio/adminjamsos.pdf" },  
 
-  { title: "Automated Attendance Tracker", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1_bS8Lw3IkojdPiU_TzINabST846_dr6B/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
+  { title: "Automated Attendance Tracker", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/12Eq8d3DKasXIOUm5B0LXun0416R3VrsRGWJCiuRxUg4/edit?usp=sharing" },
   { title: "Payroll Management System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1hffvipRbz1AFHoAUARXacxTUrOwJ5KQRQa5erp3Vut0/edit?usp=sharing" },
   { title: "PPh 21 Tax True-Up System", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1BOrMimiLWY-EVUUnnKBh8eiNB0ARqtHihsgDP2a69Ho/edit?usp=sharing" },
   { title: "BPJS Calculation", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1a7AVNmde1HRu8W85x_CwHr_HE0lm0JrLMkDVvMZ8t4Y/edit?usp=sharing" },
   { title: "Overtime Calculation", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1sKX1ZNtJqwfrOjNXht42i161c0uleAPuP5xRb6zfDm4/edit?usp=sharing" },
-  { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1RCrygGpjGw8z8e3bWPxpNeVxpCSy_3YX/edit?usp=sharing&ouid=100218828934819314835&rtpof=true&sd=true" },
+  { title: "Salary Structure", category: "payroll", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1e2twnmbijniagWCnmcQK_q-JQTysTGa3HukpoLF2PLM/edit?usp=sharing" },
   { title: "Job Evaluation", category: "payroll", extension: "PDF", path: "Portofolio/jobevaluation.pdf" },
 
   { title: "HR Master Data Hub.", category: "database", extension: "xlsx", path: "https://docs.google.com/spreadsheets/d/1Jq-3QncdJHQRHzO-7SQs5wO7xLZjGXGGrYHOzDNgp8o/edit?usp=sharing" },
