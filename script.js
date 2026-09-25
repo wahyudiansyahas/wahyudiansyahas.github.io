@@ -120,32 +120,50 @@ document.querySelectorAll('a.scroll-link').forEach(link => {
 })();
 
 
-
 /* ============================================================
    ABOUT — TAB SWITCHING
 ============================================================ */
 
 document.querySelectorAll('.tab-btn').forEach(btn => {
-
   btn.addEventListener('click', () => {
 
-    document.querySelectorAll('.tab-btn')
-      .forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => {
+      b.classList.remove('active');
+    });
 
-    document.querySelectorAll('.tab-content')
-      .forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => {
+      c.classList.remove('active');
+    });
 
     btn.classList.add('active');
 
     const panel = document.getElementById(`tab-${btn.dataset.tab}`);
 
-    if (panel) panel.classList.add('active');
+    if (panel) {
+      panel.classList.add('active');
+    }
 
   });
-
 });
 
 
+/* ============================================================
+   ABOUT — EXPERIENCE ACCORDION
+============================================================ */
+
+document.querySelectorAll('.experience-card').forEach(card => {
+  card.addEventListener('click', () => {
+
+    document.querySelectorAll('.experience-card').forEach(item => {
+      if (item !== card) {
+        item.classList.remove('open');
+      }
+    });
+
+    card.classList.toggle('open');
+
+  });
+});
 
 /* ============================================================
    PORTFOLIO — DRIVE FILE FILTER
