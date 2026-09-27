@@ -2069,6 +2069,40 @@ footer {
     flex-wrap: wrap;
   }
 
+  .skill-logo-row {
+    gap: 1.1rem;
+  }
+
+  .skill-logo-row .sk-logo {
+    height: 48px;
+    padding: .3rem .15rem;
+  }
+
+  .skill-logo-row .sk-logo img {
+    max-width: 105px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Office"] img,
+  .skill-logo-row .sk-logo[title*="Excel"] img {
+    height: 40px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Workspace"] img,
+  .skill-logo-row .sk-logo[title*="Sheets"] img {
+    height: 58px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="SAP"] img,
+  .skill-logo-row .sk-logo[title*="talenta"] img,
+  .skill-logo-row .sk-logo[title*="Talenta"] img {
+    height: 20px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Tracking"] img,
+  .skill-logo-row .sk-logo[title*="Zoho"] img {
+    height: 27px !important;
+  }
+
 
   /* Portfolio */
   .drive-container {
@@ -2165,6 +2199,40 @@ footer {
     max-width: 230px;
   }
 
+  .skill-logo-row {
+    gap: .8rem;
+  }
+
+  .skill-logo-row .sk-logo {
+    height: 44px;
+    padding: .25rem .1rem;
+  }
+
+  .skill-logo-row .sk-logo img {
+    max-width: 88px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Office"] img,
+  .skill-logo-row .sk-logo[title*="Excel"] img {
+    height: 34px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Workspace"] img,
+  .skill-logo-row .sk-logo[title*="Sheets"] img {
+    height: 48px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="SAP"] img,
+  .skill-logo-row .sk-logo[title*="talenta"] img,
+  .skill-logo-row .sk-logo[title*="Talenta"] img {
+    height: 18px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Tracking"] img,
+  .skill-logo-row .sk-logo[title*="Zoho"] img {
+    height: 23px !important;
+  }
+
 
   /* Training */
   .training-row {
@@ -2206,6 +2274,40 @@ footer {
     max-width: 200px;
   }
 
+  .skill-logo-row {
+    gap: .55rem;
+  }
+
+  .skill-logo-row .sk-logo {
+    height: 40px;
+    padding: .2rem .05rem;
+  }
+
+  .skill-logo-row .sk-logo img {
+    max-width: 75px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Office"] img,
+  .skill-logo-row .sk-logo[title*="Excel"] img {
+    height: 30px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Workspace"] img,
+  .skill-logo-row .sk-logo[title*="Sheets"] img {
+    height: 42px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="SAP"] img,
+  .skill-logo-row .sk-logo[title*="talenta"] img,
+  .skill-logo-row .sk-logo[title*="Talenta"] img {
+    height: 16px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Tracking"] img,
+  .skill-logo-row .sk-logo[title*="Zoho"] img {
+    height: 20px !important;
+  }
+
   .stat-card {
     white-space: normal;
     padding: .6rem 1rem;
@@ -2241,6 +2343,39 @@ footer {
   .hero-badge {
     font-size: .7rem;
     padding: .28rem .8rem;
+  }
+
+  .skill-logo-row {
+    gap: .4rem;
+  }
+
+  .skill-logo-row .sk-logo {
+    height: 36px;
+  }
+
+  .skill-logo-row .sk-logo img {
+    max-width: 65px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Office"] img,
+  .skill-logo-row .sk-logo[title*="Excel"] img {
+    height: 27px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Workspace"] img,
+  .skill-logo-row .sk-logo[title*="Sheets"] img {
+    height: 36px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="SAP"] img,
+  .skill-logo-row .sk-logo[title*="talenta"] img,
+  .skill-logo-row .sk-logo[title*="Talenta"] img {
+    height: 14px !important;
+  }
+
+  .skill-logo-row .sk-logo[title*="Tracking"] img,
+  .skill-logo-row .sk-logo[title*="Zoho"] img {
+    height: 18px !important;
   }
 
   .drive-files-list.grid-view {
